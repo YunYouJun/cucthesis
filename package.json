@@ -1,0 +1,34 @@
+{
+  "name": "cucthesis",
+  "version": "0.0.1",
+  "description": "Communication University of China Thesis LaTeX Template",
+  "main": "gulpfile.js",
+  "scripts": {
+    "build": "gulp build",
+    "clean": "make clean",
+    "make": "make thesis"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/YunYouJun/cucthesis.git"
+  },
+  "keywords": [
+    "LaTeX",
+    "CucThesis"
+  ],
+  "author": "YunYouJun",
+  "license": "LPPL-1.3c",
+  "bugs": {
+    "url": "https://github.com/YunYouJun/cucthesis/issues"
+  },
+  "homepage": "https://github.com/YunYouJun/cucthesis",
+  "devDependencies": {
+    "ansi-colors": "^4.1.1",
+    "del": "^6.0.0",
+    "fancy-log": "^1.3.3",
+    "gulp": "^4.0.2",
+    "gulp-zip": "^5.0.1",
+    "minimist": "^1.2.5"
+  },
+  "dependencies": {}
+}

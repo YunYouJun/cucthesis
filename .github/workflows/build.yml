@@ -1,0 +1,33 @@
+name: Build
+
+on: [push, pull_request]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    if: "!contains(github.event.head_commit.message, 'ci skip')"
+    container: tunathu/thuthesis-test-env
+    steps:
+      # fix container
+      - run: apt update && apt install git -y
+      - uses: actions/checkout@v2
+      - name: Install required packages
+        run: bash .github/workflows/install-packages.sh
+      - name: Make Thesis
+        run: make thesis
+      - name: Show file
+        run: ls
+
+      - name: Copy file
+        run: mkdir ./dist && cp main.pdf ./dist && cp -r ./public/* ./dist
+      # - name: Test spine
+      #   run: make spine
+      # - name: Test doc
+      #   run: make doc
+
+      - name: Deploy
+        uses: peaceiris/actions-gh-pages@v3
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./dist
+          force_orphan: true

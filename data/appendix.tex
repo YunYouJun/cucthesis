@@ -1,0 +1,89 @@
+% !TeX root = ../main.tex
+
+\chapter{附\quad 录}
+
+% \section{图表示例}
+
+% \subsection{图}
+
+% 附录中的图片示例（图~\ref{fig:appendix-figure}）。
+
+% \begin{figure}
+%   \centering
+%   \includegraphics[width=0.6\linewidth]{example-image-a.pdf}
+%   \caption{附录中的图片示例}
+%   \label{fig:appendix-figure}
+% \end{figure}
+
+% \section{相关图表}
+
+% \subsection{表格}
+
+% 从零开始编号
+\setcounter{table}{0}
+%定义编号格式，在数字序号前加字符“A"
+
+\renewcommand{\thetable}{A.\arabic{table}}
+
+\begin{table}
+  \caption{3D 模型格式及作用}
+  \begin{tabularx}{\textwidth}{l|XX}
+    \toprule
+    格式          & 描述  & 优缺点                 \\
+    \midrule
+    .abc   & 特效工作室主导的通用格式 & 功能强大、通用，但体积大 \\
+    .gltf  & 面向 Web 端的格式 & 体积小、跨平台，但功能相对有限  \\
+    .fbx & Autodesk 家族通用格式 & 支持动画、兼容广泛，体积与功能介于 abc 与 gltf 之间，通常与 Autodesk 强绑定   \\
+    .bvh & BioVision 等设备人物动作捕捉数据 & 通用的人体特征动画文件格式  \\
+    .dae & fbx 替代品，基于 XML（Google 地图采用该格式） & 通常需要额外下载软件转换，不够通用  \\
+    .stl & 三维打印的通用格式 & 格式简单，只能描述三维物体的几何信息，不支持颜色材质等信息  \\
+    .3ds & 三角面静态模型 & 格式简单，难以二次编辑，逐渐被淘汰  \\
+    .obj & 静态多边形模型，标准 3D 模型文件格式 & 通用，附带 UV 信息与材质路径，但不包含动画、粒子等信息  \\
+    .ply & 静态多边形模型（obj 的升级版），常见于点云扫描 & 改进了 obj 格式所缺少的对任意属性及群组的扩充性  \\
+    .psk & Unreal Engine 独有 & 模型带有骨骼动画  \\
+    .x3d & 基于 XML 的 Web3D 标记语言，ISO 认证的国际标准 & VRML 标准的升级版本，但制作工具和开发环境相对落后，占有率不高  \\
+    .dxf & CAD 通用格式 & 矢量作图通用标准  \\
+    \bottomrule
+  \end{tabularx}
+  \label{tab:3d-model-format}
+\end{table}
+
+\begin{table}
+  \centering
+  \caption{人体模型骨骼索引}
+  \begin{tabular}{ll|ll}
+    \toprule
+    骨骼索引名        & 描述                       & 骨骼索引名        & 描述 \\
+    \midrule
+    hips &  臀部 & leftThumbProximal &  左拇指根部 \\
+    leftUpperLeg &  左大腿 & leftThumbIntermediate &  左拇指中部 \\
+    rightUpperLeg &  右大腿 & leftThumbDistal &  左拇指端部 \\
+    leftLowerLeg &  左小腿 & leftIndexProximal &  左食指根部 \\
+    rightLowerLeg &  右小腿 & leftIndexIntermediate &  左食指中部 \\
+    leftFoot &  左脚 & leftIndexDistal &  左食指端部 \\
+    rightFoot &  右脚 & leftMiddleProximal &  左中指根部 \\
+    spine &  脊柱 & leftMiddleIntermediate &  左中指中部 \\
+    chest &  胸部 & leftMiddleDistal &  左中指端部 \\
+    neck &  脖子 & leftRingProximal &  左无名指根部 \\
+    head &  头部 & leftRingIntermediate &  左无名指中部 \\
+    leftShoulder &  左肩 & leftRingDistal &  左无名指端部 \\
+    rightShoulder &  右肩 & leftLittleProximal &  左小指根部 \\
+    leftUpperArm &  左大臂 & leftLittleIntermediate &  左小指中部 \\
+    rightUpperArm &  右大臂 & leftLittleDistal &  左小指端部 \\
+    leftLowerArm &  左小臂 & rightThumbProximal &  右拇指根部 \\
+    rightLowerArm &  右小臂 & rightThumbIntermediate &  右拇指中部 \\
+    leftHand &  左手 & rightThumbDistal &  右拇指端部 \\
+    rightHand &  右手 & rightIndexProximal &  右食指根部 \\
+    leftToes &  左脚趾 & rightIndexIntermediate &  右食指中部 \\
+    rightToes &  右脚趾 & rightIndexDistal &  右食指端部 \\
+    leftEye &  左眼 & rightMiddleProximal &  右中指根部 \\
+    rightEye &  右眼 & rightMiddleIntermediate &  右中指中部 \\
+    jaw &  下颌 & rightMiddleDistal &  右中指端部 \\
+    lastBone &  最后一块骨骼索引分隔符 & rightRingProximal &  右无名指根部 \\
+    upperChest &  上胸膛 & rightRingIntermediate &  右无名指中部 \\
+    rightRingDistal &  右无名指端部 & rightLittleIntermediate &  右小指中部 \\
+    rightLittleProximal &  右小指根部 & rightLittleDistal &  右小指端部 \\
+    \bottomrule
+  \end{tabular}
+  \label{tab:human-body-bones}
+\end{table}
