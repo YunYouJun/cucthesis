@@ -32,7 +32,7 @@ const config = {
     files: [
       "thuthesis-example.tex",
       "spine.tex",
-      "thuthesis-example.pdf",
+      // "thuthesis-example.pdf",
       "spine.pdf",
       "thusetup.tex",
       "data/*.tex",
