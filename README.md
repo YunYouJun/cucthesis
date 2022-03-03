@@ -21,7 +21,7 @@
 - 开发版：[GitHub](https://github.com/YunYouJun/cucthesis)
 
 仓库中不提供预生成的 `cls` 文件和文档，仅包含源码。
-其仅供开发者与需要尚未发布的功能的有经验的 TeX 用户使用，不提供任何保证。
+您需掌握基础的编译指令，使用 `make thesis` 编译论文。
 
 下载途径：
 
@@ -68,9 +68,7 @@ make [{all|thesis|spine|doc|clean|cleanall|distclean}]
 
 ## 论文查重
 
-提交后学校会使用知网查重。
-
-有几个提供免费查重一次的地方，我仅使用了一下内容进行提前查重。
+提交后学校会使用知网查重，我仅使用了以下免费方式进行提前查重。
 
 - [学信网万方免费查重一次](http://chsi.wanfangtech.net/)：略好于大雅，与知网接近
 - [中国传媒大学图书馆超星大雅论文检测提供自助查重权限 1 篇](https://libw.cuc.edu.cn/2019/0321/c4491a120263/page.htm)：各种重复有点牵强
