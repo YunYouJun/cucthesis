@@ -2,13 +2,37 @@
 
 您须先配置 LaTeX 环境。
 
-## Mac
+## 环境
+
+> Windows 就请搜搜网上的教程吧，据称，Mac 编译 LaTeX 速度要远超 Windows 哦。
+
+### Mac
 
 > 可参考 [LaTeX 使用笔记](https://www.yuque.com/yunyoujun/notes/latex-use-note)
 
 Mac 用户需安装 [MacTeX](https://www.tug.org/mactex/mactex-download.html)。
 
 推荐使用 [VSCode](https://code.visualstudio.com/) + [LaTeX Workshop - Visual Studio Marketplace](https://marketplace.visualstudio.com/items?itemName=James-Yu.latex-workshop)。
+
+## 使用
+
+### 下载
+
+```bash
+git clone https://github.com/YunYouJun/cucthesis
+```
+
+### 编写
+
+使用 VSCode 编写 `data` 文件夹下的各章节内容。
+
+### 编译
+
+```bash
+make thesis
+```
+
+生成的 `main.pdf` 就是你的最终论文啦。
 
 ## 参考文档
 
