@@ -89,13 +89,13 @@ make [{all|thesis|spine|doc|clean|cleanall|distclean}]
   - 自动编号
   - 按需引入
   - 优雅的 BibTeX 风格（和 Google Scholar 搭配非常方便）
-- 编译即最终稿 PDF（Word 可能需要微调）
+- 编译即最终稿 PDF（不像 Word 可能需要微调）
 
 > 相比 thuthesis 的修改
 
-- 添加了 `XML/JavaScript/C/JSON` 等代码风格及着色
+- 添加了 `XML/JavaScript/C/JSON/Python` 等代码风格及着色
 - 可以使用 GitHub CI 生成并部署最终预览
-- 已预知 CUC 硕士论文格式，只需专注内容
+- 已预置 CUC 硕士论文格式，只需专注内容
 - 移除了部分无用素材，如：
   - tsinghua-name-bachelor.pdf 清华大学 LOGO
   - committee.pdf 评审委员会
@@ -127,7 +127,7 @@ make [{all|thesis|spine|doc|clean|cleanall|distclean}]
 │   ├── abstract.tex # 摘要
 │   ├── acknowledgements.tex # 致谢
 │   ├── appendix.tex # 附录
-│   ├── chap01.tex
+│   ├── chap01.tex # 第一章
 │   ├── chap02.tex
 │   ├── chap03.tex
 │   ├── chap04.tex
@@ -182,7 +182,8 @@ make [{all|thesis|spine|doc|clean|cleanall|distclean}]
 由于学校并未提供毕业论文的 LaTeX 模版，因此我决定自行根据要求进行排版。
 
 尽管编排 LaTeX 模版可能花费的时间可能比用 Word 编辑还要多，但我想如果它可以复用，那便是有意义的。
-也衷心希望它可以帮你优雅开心快捷地完成毕业论文的排版工作。
+
+也衷心希望它可以帮你优雅、开心、快捷地完成毕业论文的排版工作。
 
 **值得注意的是：**
 
