@@ -1,17 +1,20 @@
-# My Master Thesis
+# CucThesis
 
 [![Build](https://github.com/YunYouJun/cucthesis/actions/workflows/build.yml/badge.svg)](https://github.com/YunYouJun/cucthesis/actions/workflows/build.yml)
 [![GitHub package.json version](https://img.shields.io/github/package-json/v/YunYouJun/cucthesis)](https://github.com/YunYouJun/cucthesis)
 
 <!-- [![Since ThuThesis Version](https://img.shields.io/badge/ThuThesis-v7.2.3-blue)](https://github.com/tuna/thuthesis/releases/v7.2.3) -->
 
-> Communication University of China
+> CucThesis 是 Communication University of China LaTeX Template 的缩写。
 
-CucThesis 是 Communication University of China LaTeX Template 的缩写。
+本模版基于 [ThuThesis v7.2.3](https://github.com/tuna/thuthesis) 修改。
 
-模版基于 [ThuThesis v7.2.3](https://github.com/tuna/thuthesis) 修改。
+旨在用于编写中国传媒大学「硕士学位」论文。（适用于 2021-11-23「自然科学」版规则，文科专业未知。）
 
-旨在用于编写中国传媒大学「硕士学位」论文。
+- 在线预览：[main.pdf](https://yunyoujun.github.io/cucthesis/)
+- 使用说明：[README.md](docs/README.md)
+- 常见问题：[FAQ.md](FAQ.md)
+- 更新日志：[CHANGELOG.md](CHANGELOG.md)
 
 ## 下载
 
@@ -25,12 +28,6 @@ CucThesis 是 Communication University of China LaTeX Template 的缩写。
 ```bash
 git clone https://github.com/YunYouJun/cucthesis
 ```
-
-## 其他
-
-- 使用说明：[README.md](docs/README.md)
-- 常见问题：[FAQ.md](FAQ.md)
-- 更新日志：[CHANGELOG.md](CHANGELOG.md)
 
 ## Makefile 的用法
 
@@ -86,7 +83,10 @@ make [{all|thesis|spine|doc|clean|cleanall|distclean}]
 > 模版本身的优点
 
 - 自动生成目录
-- 图表自动编号
+- 图表自动编号、对齐且美观
+- 优雅愉快地书写公式
+- 纯文本适用于任意文本编辑器与 Git 版本管理
+- Tikz 文本绘制矢量图形、清晰且便于修改
 - 参考文献
   - 自动编号
   - 按需引入
@@ -164,3 +164,28 @@ make [{all|thesis|spine|doc|clean|cleanall|distclean}]
 ├── thuthesis.dtx # 论文主体格式
 └── thuthesis.ins
 ```
+
+## 后话
+
+### Why LaTeX?
+
+> 参见 [#Features](#Features)
+
+调格式总是一件麻烦的事情，LaTeX 是一个功能强大的排版工具，也通常是理工科期刊会议论文的贵客。
+
+它的内容与排版样式是相互隔离的，因此不像 Word 之类的富文本编辑器容易在编写过程中造成格式错乱。
+且在拥有预置模版后，你可以更专注于内容，而非格式。
+
+此外排版公式、参考文献的引用方式也是我选择 LaTeX 的原因。
+
+## Why CucThesis?
+
+由于学校并未提供毕业论文的 LaTeX 模版，因此我决定自行根据要求进行排版。
+
+尽管编排 LaTeX 模版可能花费的时间可能比用 Word 编辑还要多，但我想如果它可以复用，那便是有意义的。也衷心希望它可以帮你优雅开心的排版毕业论文并节省时间。
+
+**值得注意的是：**
+
+- 如果您完全没有接触过 LaTeX，且并非理工科学生、无公式和文本绘图等需求，我更推荐您直接使用 Word。
+- LaTeX 的环境与细节调整对于无经验者可能会消耗大量时间。
+- 未来学校格式可能发生变动，请按需修改。
