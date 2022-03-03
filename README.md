@@ -117,6 +117,7 @@ make [{all|thesis|spine|doc|clean|cleanall|distclean}]
 ├── LICENSE
 ├── Makefile
 ├── README.md
+├── .github/workflows/build.yml # GitHub Actions 自动构建论文，并部署 GitHub Pages
 ├── cuc
 │   ├── cuc-thesis-cover-without-name.pdf # 匿名论文封面 PDF（需手动导出）
 │   ├── cuc-thesis-cover.docx # 封面 Word 版

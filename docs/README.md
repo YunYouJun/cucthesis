@@ -34,6 +34,10 @@ make thesis
 
 生成的 `main.pdf` 就是你的最终论文啦。
 
+### CI
+
+如果你使用 GitHub 托管你的论文内容（记得 Private），并希望可以在线预览（自带的 CI 脚本会自动构建并部署 GitHub Pages 预览），请启用 Settings > GitHub Pages。
+
 ## 参考文档
 
 ### 参考文献
