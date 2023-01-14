@@ -11,9 +11,9 @@
 
 旨在用于编写中国传媒大学「硕士学位」论文。（适用于 2021-11-23「自然科学」版规则，文科专业未知。）
 
-- 在线预览：[main.pdf](https://yunyoujun.github.io/cucthesis/)
-- 使用说明：[README.md](docs/README.md)
-- 常见问题：[FAQ.md](FAQ.md)
+- **在线预览**：[main.pdf](https://yunyoujun.github.io/cucthesis/)
+- **使用说明**：[README.md](docs/README.md)
+- **常见问题**：[FAQ.md](FAQ.md)
 - 更新日志：[CHANGELOG.md](CHANGELOG.md)
 
 ## 下载
