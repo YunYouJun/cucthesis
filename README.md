@@ -164,6 +164,10 @@ make [{all|thesis|spine|doc|clean|cleanall|distclean}]
 └── thuthesis.ins
 ```
 
+## 自定义
+
+整体样式位于 `thuthesis.dtx` 中，可通过搜索 `% CUC` 检索到针对 CUC 部分定制的样式内容代码。
+
 ## 后话
 
 ### Why LaTeX?
