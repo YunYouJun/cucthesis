@@ -9,7 +9,7 @@ jobs:
     container: tunathu/thuthesis-test-env
     steps:
       # fix container
-      - run: apt update && apt install git -y
+      - run: apt update && apt install git wget -y
       - uses: actions/checkout@v2
       - name: Install required packages
         run: bash .github/workflows/install-packages.sh
