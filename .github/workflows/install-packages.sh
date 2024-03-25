@@ -20,6 +20,10 @@ MARKDOWN_PKGS="markdown fancyvrb csvsimple gobble"
 DOC_PKGS="hologo listings xcolor $MARKDOWN_PKGS"
 EXAMPLE_PKGS="float fp metalogo multirow mwe"
 
+wget https://mirror.ctan.org/systems/texlive/tlnet/update-tlmgr-latest.sh
+sh update-tlmgr-latest.sh -- --upgrade
+tlmgr update --self --all
+luaotfload-tool -fu
 tlmgr install $BIN_PKGS $REQUIRED_PKGS $FONT_PKGS $EXTRA_PKGS $DOC_PKGS \
   $EXAMPLE_PKGS
 tlmgr install pgfplots
